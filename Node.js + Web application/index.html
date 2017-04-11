@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="ev3">
+<head>
+	<title>EV3</title>
+</head>
+<body>
+ 
+<div ng-controller="movementController">
+	<form>
+		<button ng-click="movement('A')">Forward</button><input ng-model='time' type="number" name="time" />
+		<br />
+		<button ng-click="movement('B')">Backward</button>
+		<br />
+		<button ng-click="movement('C')">Left</button>
+		<br/>
+		<button ng-click="movement('D')">Right</button>
+	
+	</form>
+
+</div>
+
+
+<script type="text/javascript" src='/socket.io/socket.io.js'></script>
+<script type="text/javascript" src='app/connect.js'></script>
+<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+
+</body>
+</html>
